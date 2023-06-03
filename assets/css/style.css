@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0px;
+    background: #222222;
+    color: #6C92D9;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    padding: 25px 40px 0 0;
+    margin-right: 20px;
+    justify-content: flex-end;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 35px;
+
+}
+
+a {
+    text-decoration: none;
+    border-bottom: 3px solid rgba(50, 241, 226, 1);
+    padding: 5px;
+    color:rgba(50, 241, 226, 1);
+    font-size: 150%;
+    font-weight: bold;
+    
+}
+
+.name {
+    font-size: 400%;
+    font-family: ;
+    color: #222222;
+}
+
+
+
+.highlight{
+    display: flex;
+    padding: 5px 10px 5px 60px;
+    background: rgba(50, 241, 226, 1);
+}
+
+.image-subtitle-container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+figure {
+    height: 280px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/header-image-2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.image-subtitle {
+    position: absolute;
+    bottom: 0px;
+    right:0px;
+    display: flex;
+    padding: 20px 40px 40px 40px;
+    background: rgba(34, 34, 34, .7);
+    font-size: 300%;
+    color: rgba(50, 241, 226, 1);
+    font-weight: bold;
+}
+
+
+
+main {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 10px 0 30px;
+    display: flex;
+    flex-direction: row;
+  }
+
+aside {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end;
+    width: 20%;
+    height: 100%;
+    padding-left: 5%;
+}
+
+aside section h3 {
+    display: block;
+    text-align: right;
+    color:rgba(34, 34, 34, 1);
+    font-size: 400%;
+  }
+
+article {
+    display: flex;
+    flex: 80%; 
+}
+
+.vl {
+    border-right: 4px solid rgba(34, 34, 34, 1);
+    height:3em;
+    position: relative;
+    right: 10%;
+    padding: 0 20px 0 0;
+  }
+
+
+
+
+
+
+  
