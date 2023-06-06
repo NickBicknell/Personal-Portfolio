@@ -15,7 +15,12 @@ header {
     color: #6C92D9;
 }
 
-
+header h1 {
+    font-size: 200%;
+    color: #222222;
+    background-color: rgba(50, 241, 226, 1);
+    padding: 12px 10px 0 10px;
+}
 
 header nav {
     flex-direction: row;
@@ -26,8 +31,9 @@ header nav {
 }
 
 header nav ul {
-
+    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 header nav ul li {
@@ -37,12 +43,7 @@ header nav ul li {
 
 }
 
-.name {
-    font-size: 200%;
-    color: #222222;
-    background-color: rgba(50, 241, 226, 1);
-    padding: 12px 10px 0 10px;
-}
+
 
 header nav ul li a {
     text-decoration: none;
@@ -56,17 +57,16 @@ header nav ul li a {
 
 .banner {
     height: 280px;
-    width: 100%;
+    max-width: 100%;
     margin-bottom: 50px;
     background-image: url("../images/header-image-2.jpg");
-    background-size: cover;
-    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .banner h3 {
-    position: relative;
-    top: 65%;
-    left: 70%;
+    
     padding: 20px 40px 42px 40px;
     background: rgba(34, 34, 34, .7);
     font-size: 150%;
@@ -74,17 +74,7 @@ header nav ul li a {
     font-weight: bold;
 }
 
-.section-1 {
-    display: block;
-}
 
-.section-2 {
-    display: block;
-}
-
-.section-3 {
-    display: block;
-}
 
 .flexbox-1 {
     display: flex;
@@ -95,12 +85,14 @@ header nav ul li a {
     flex: 0 0 20%;
     border-right: 5px solid rgba(34, 34, 34, 1);
     margin-bottom: -50px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .flexbox-1 aside h3 {
     flex-wrap: wrap;
     text-align: right;
-    padding: 0 20px 0 50%;
+    padding: 0 20px 0 0;
     font-size: 50px;
 }
 
@@ -123,18 +115,21 @@ header nav ul li a {
     flex: 0 0 20%;
     border-right: 5px solid rgba(34, 34, 34, 1);
     margin-bottom: -50px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .flexbox-2 aside h3 {
     flex-wrap: wrap;
     text-align: right;
-    padding: 0 20px 0 30%;
+    padding: 0 20px 0 0;
     font-size: 50px;
 }
 
 .flexbox-2 figure{
     max-width: 80%;
     padding: 0 70px 0 50px;
+    
 }
 
 .flexbox-2 figure a {
@@ -143,7 +138,8 @@ header nav ul li a {
 
 .flexbox-2 figure a img {
     width: 60%;
-    border-radius: 50px;
+    border-radius: 5%;
+    border: 3px solid rgba(50, 241, 226, 1);
 }
 
 .flexbox-3 {
@@ -155,22 +151,26 @@ header nav ul li a {
     flex: 0 0 20%;
     border-right: 5px solid rgba(34, 34, 34, 1);
     padding-bottom: 50px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .flexbox-3 aside h3 {
     flex-wrap: wrap;
     text-align: right;
-    padding: 0 20px 0 40%;
+    padding: 0 20px 0 0;
     font-size: 50px;
 }
 
 .flexbox-3 nav {
     max-width: 80%;
     padding: 20px 70px 0 50px;
-
+    display: flex;
 }
 
 .flexbox-3 nav ul {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .flexbox-3 nav ul li {
@@ -185,4 +185,267 @@ header nav ul li a {
     color:rgba(50, 241, 226, 1);
     font-size: 150%;
     font-weight: bold;
+}
+
+@media screen and (max-width: 1265px) {
+    header h1 {
+        font-size: 150%;
+    }
+    header nav ul li a {
+        font-size: 100%;
+        flex-wrap: wrap;
+    }
+
+    .flexbox-1 aside h3 {
+        flex-wrap: wrap;
+        text-align: right;
+        padding: 0 10px 0 50%;
+        font-size: 30px;
+    }
+    .flexbox-2 aside h3 {
+        flex-wrap: wrap;
+        text-align: right;
+        padding: 0 10px 0 50%;
+        font-size: 30px;
+    }
+    .flexbox-2 figure{
+        max-width: 80%;
+        padding: 0 70px 0 50px;
+    }
+    .flexbox-2 figure a img {
+        width: 60%;
+        border-radius: 5%;
+    }
+    .flexbox-3 aside h3 {
+        flex-wrap: wrap;
+        text-align: right;
+        padding: 0 10px 0 50%;
+        font-size: 30px;
+    }
+    .flexbox-1 article {
+        max-width: 80%;
+        padding: 0 50px 0 30px;
+    }
+    
+    .flexbox-1 article p {
+        font-size: 22px;
+        padding: 0 40px 0 20px;
+    }
+    .flexbox-3 nav ul li a {
+        text-decoration: none;
+        border-bottom: 3px solid rgba(50, 241, 226, 1);
+        padding: 5px;
+        color:rgba(50, 241, 226, 1);
+        font-size: 100%;
+        font-weight: bold;
+    }
+    .banner {
+        height: 200px;
+        max-width: 100%;
+        margin-bottom: 50px;
+        background-image: url("../images/header-image-2-small.jpg");
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .banner h3 {
+        font-size: 100%;
+        flex-wrap: wrap;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 150%;
+    }
+    header nav ul li a {
+        font-size: 100%;
+        flex-wrap: wrap;
+    }
+
+    .flexbox-1 aside h3 {
+        flex-wrap: wrap;
+        text-align: right;
+        padding: 0 10px 0 50%;
+        font-size: 30px;
+    }
+    .flexbox-2 aside h3 {
+        flex-wrap: wrap;
+        text-align: right;
+        padding: 0 10px 0 50%;
+        font-size: 30px;
+    }
+    .flexbox-2 figure{
+        max-width: 80%;
+        padding: 0 70px 0 50px;
+    }
+    .flexbox-2 figure a img {
+        width: 60%;
+        border-radius: 5%;
+    }
+    .flexbox-3 aside h3 {
+        flex-wrap: wrap;
+        text-align: right;
+        padding: 0 10px 0 50%;
+        font-size: 30px;
+    }
+    .flexbox-1 article {
+        max-width: 80%;
+        padding: 0 50px 0 30px;
+    }
+    
+    .flexbox-1 article p {
+        font-size: 22px;
+        padding: 0 40px 0 20px;
+    }
+    .flexbox-3 nav ul li a {
+        text-decoration: none;
+        border-bottom: 3px solid rgba(50, 241, 226, 1);
+        padding: 5px;
+        color:rgba(50, 241, 226, 1);
+        font-size: 100%;
+        font-weight: bold;
+    }
+    .banner {
+        height: 200px;
+        max-width: 100%;
+        margin-bottom: 50px;
+        background-image: url("../images/header-image-2-small.jpg");
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .banner h3 {
+        font-size: 100%;
+        flex-wrap: wrap;
+    }
+
+
+}
+
+@media screen and (max-width: 576px) {
+    header h1 {
+        font-size: 100%;
+    }
+    header nav {
+        padding: 10px 0 0 0;
+    }
+    header nav ul {
+        flex-wrap: wrap;
+        display: flex;
+    }
+    header nav ul li{
+        margin: 10px;
+        padding: 0;
+    }
+    header nav ul li a {
+        font-size: 60%;
+    }
+    .flexbox-1 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 10%;
+        
+    }
+    .flexbox-1 aside {
+        margin-bottom: 25px;
+        border-bottom: 5px solid rgba(34, 34, 34, 1);
+        border-right: none;
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    .flexbox-1 article {
+        display: flex;
+        max-width: 100%;
+        padding: 0;
+        flex-direction: column;
+    }
+    
+    .flexbox-1 article p {
+        font-size: 14px;
+        padding: 0 10px 0 10px;
+    }
+    .flexbox-2 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 10%;
+    }
+    .flexbox-2 aside {
+        margin-bottom: 25px;
+        border-bottom: 5px solid rgba(34, 34, 34, 1);
+        border-right: none;
+        display: flex;
+        justify-content: center;
+    }
+    .flexbox-1 aside h3 {
+        font-size: 24px;
+        padding: 0;
+    }
+    .flexbox-2 aside h3 {
+        padding: 0;
+        font-size: 24px;
+    }
+    .flexbox-2 figure{
+        max-width: 100%;
+        padding: 0;
+    }
+    .flexbox-2 figure a img {
+        width: 60%;
+        border-radius: 5%;
+        border: 1px solid rgba(50, 241, 226, 1);
+    }
+    .flexbox-3 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .flexbox-3 aside {
+        margin-bottom: 25px;
+        border-bottom: 5px solid rgba(34, 34, 34, 1);
+        border-right: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    .flexbox-3 aside h3 {
+        flex-wrap: wrap;
+        text-align: right;
+        padding: 0;
+        font-size: 24px;
+    }
+    
+    .flexbox-3 nav ul li a {
+        font-size: 60%;
+
+        padding: 2px;
+
+    }
+    .flexbox-3 nav {
+        padding: 0;
+    }
+    .flexbox-3 nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .banner {
+        height: 200px;
+        max-width: 100%;
+        margin-bottom: 50px;
+        background-image: url("../images/header-image-2-small.jpg");
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .banner h3 {
+        font-size: 100%;
+        flex-wrap: wrap;
+    }
 }
