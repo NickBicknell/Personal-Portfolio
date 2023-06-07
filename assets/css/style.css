@@ -52,8 +52,12 @@ header nav ul li a {
     color:rgba(50, 241, 226, 1);
     font-size: 120%;
     font-weight: bold;
-    
 }
+
+header nav ul li a:hover {
+    background-color: rgba(50, 241, 226, .2);
+}
+
 
 .banner {
     height: 280px;
@@ -128,7 +132,7 @@ header nav ul li a {
 
 .flexbox-2 figure{
     max-width: 80%;
-    padding: 0 70px 0 50px;
+    padding: 0 70px 0 90px;
     
 }
 
@@ -137,9 +141,22 @@ header nav ul li a {
 }
 
 .flexbox-2 figure a img {
-    width: 60%;
+    width: 80%;
     border-radius: 5%;
     border: 3px solid rgba(50, 241, 226, 1);
+    margin-bottom: 10px;
+}
+
+.calculator {
+    max-width: 39.5%;
+    height: 13em;
+    border-radius: 5%;
+    border: 3px solid rgba(50, 241, 226, 1);
+    margin-bottom: 10px;
+}
+
+.flexbox-2 figure a:hover {
+    opacity: .8;
 }
 
 .flexbox-3 {
@@ -187,7 +204,11 @@ header nav ul li a {
     font-weight: bold;
 }
 
-@media screen and (max-width: 1265px) {
+.flexbox-3 nav ul li a:hover {
+    background-color: rgba(50, 241, 226, .2);
+}
+
+@media screen and (max-width: 1280px) {
     header h1 {
         font-size: 150%;
     }
@@ -213,8 +234,14 @@ header nav ul li a {
         padding: 0 70px 0 50px;
     }
     .flexbox-2 figure a img {
-        width: 60%;
+        width: 70%;
         border-radius: 5%;
+    }
+    .calculator {
+        max-width: 80%;
+        height: auto;
+        border-radius: 5%;
+        border: 3px solid rgba(50, 241, 226, 1);
     }
     .flexbox-3 aside h3 {
         flex-wrap: wrap;
@@ -231,10 +258,14 @@ header nav ul li a {
         font-size: 22px;
         padding: 0 40px 0 20px;
     }
+    .flexbox-3 nav ul li {
+        display: inline;
+        padding: 5px 20px;
+    }
     .flexbox-3 nav ul li a {
         text-decoration: none;
         border-bottom: 3px solid rgba(50, 241, 226, 1);
-        padding: 5px;
+        padding: 3px;
         color:rgba(50, 241, 226, 1);
         font-size: 100%;
         font-weight: bold;
@@ -280,10 +311,18 @@ header nav ul li a {
     .flexbox-2 figure{
         max-width: 80%;
         padding: 0 70px 0 50px;
+        display: flex;
+        flex-wrap: wrap;
     }
     .flexbox-2 figure a img {
-        width: 60%;
+        width: 80%;
         border-radius: 5%;
+    }
+    .calculator {
+        max-width: 90%;
+        height: auto;
+        border-radius: 5%;
+        border: 3px solid rgba(50, 241, 226, 1);
     }
     .flexbox-3 aside h3 {
         flex-wrap: wrap;
@@ -299,6 +338,10 @@ header nav ul li a {
     .flexbox-1 article p {
         font-size: 22px;
         padding: 0 40px 0 20px;
+    }
+    .flexbox-3 nav ul li {
+        display: inline;
+        padding: 5px 20px;
     }
     .flexbox-3 nav ul li a {
         text-decoration: none;
@@ -368,7 +411,7 @@ header nav ul li a {
     
     .flexbox-1 article p {
         font-size: 14px;
-        padding: 0 10px 0 10px;
+        padding: 0 15px;
     }
     .flexbox-2 {
         display: flex;
@@ -419,6 +462,10 @@ header nav ul li a {
         text-align: right;
         padding: 0;
         font-size: 24px;
+    }
+    .flexbox-3 nav ul li {
+        display: inline;
+        padding: 5px 20px;
     }
     
     .flexbox-3 nav ul li a {
