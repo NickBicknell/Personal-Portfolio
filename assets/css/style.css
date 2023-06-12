@@ -1,3 +1,4 @@
+/* Universal Styling */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,6 +8,7 @@
     line-height: 1.2;
 }
 
+/* All header/navigation styling */
 header {
     display: flex;
     flex-wrap: wrap;
@@ -50,10 +52,12 @@ header nav ul li a {
     font-weight: bold;
 }
 
+/* highlights navigation links */
 header nav ul li a:hover {
     background-color: rgba(50, 241, 226, .2);
 }
 
+/* banner/image dividing the header and main body styling */
 .banner {
     height: 280px;
     max-width: 100%;
@@ -72,6 +76,7 @@ header nav ul li a:hover {
     font-weight: bold;
 }
 
+/* about me section styling and flexbox */
 .flexbox-1 {
     display: flex;
     padding-bottom: 5em;
@@ -101,6 +106,7 @@ header nav ul li a:hover {
     padding: 0 80px 0 50px;
 }
 
+/* projects section styling and flexbox */
 .flexbox-2 {
     display: flex;
     padding-bottom: 5em;
@@ -144,10 +150,12 @@ header nav ul li a:hover {
     margin-bottom: 10px;
 }
 
+/* Highlights project images/links */
 .flexbox-2 figure a:hover {
     opacity: .8;
 }
 
+/* Contact me section styling and flexbox */
 .flexbox-3 {
     display: flex;
     padding-bottom: 2em;
@@ -192,10 +200,12 @@ header nav ul li a:hover {
     font-weight: bold;
 }
 
+/* highlights navigation links */
 .flexbox-3 nav ul li a:hover {
     background-color: rgba(50, 241, 226, .2);
 }
 
+/* Adjusts webpage sizes and dimensions on screen sizes 1280px - 768px */
 @media screen and (max-width: 1280px) {
     header h1 {
         font-size: 150%;
@@ -267,6 +277,7 @@ header nav ul li a:hover {
     }
 }
 
+/* Adjusts webpage sizes and dimensions on screen sizes 768px - 576px */
 @media screen and (max-width: 768px) {
     header h1 {
         font-size: 150%;
@@ -342,6 +353,7 @@ header nav ul li a:hover {
     }
 }
 
+/* Adjusts webpage size, dimensions, and layout on screens 576px or smaller */
 @media screen and (max-width: 576px) {
     header h1 {
         font-size: 100%;
